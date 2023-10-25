@@ -1,0 +1,121 @@
+
+
+
+  .carousel .thumbs-wrapper{
+    display: none;
+}
+
+.carousel.carousel-slider .control-arrow{
+    display: none;
+}
+
+.carousel .carousel-status{
+    display: none;
+}
+
+.banner {
+    position: relative;
+    /* Add any other necessary styles for your banner container */
+    /* filter: brightness(0.8); */
+    /* margin-bottom: 10rem; */
+  }
+  
+  .carousel-content {
+    position: absolute;
+    top: 35%; /* Move the content 50% down from the top */
+    right: 70%; /* Move the content 50% from the left */
+    transform: translate(25%, -5%);
+    background: white; /* Set text color to white or your desired color */
+    /* Add any other necessary styles for your content */
+  }
+  .top-half{
+      padding: 20px 20px 0;
+  }
+
+  .top-half .button{
+      font-size: 16px;
+  }
+
+  .banner{
+      margin-bottom: 10rem;
+  }
+
+
+
+  .carousel .slide{
+      filter: brightness(0.8);
+  }
+
+  .banner h1{
+      color: #77368e;
+      font-size: 3rem;
+  }
+
+  .banner h1 span{
+      font-size: 20px;
+      color: #bab4d4;
+  }
+
+  .bottom-half h3{
+      color: #fff;
+      margin-bottom: 0;
+  }
+
+  .bottom-half{
+      background: #bab4d4;
+      padding: 2rem 4rem;
+      margin-top: 2rem;
+  }
+
+  .bottom-half img{
+    filter: invert(100%) sepia(0%) saturate(7466%) hue-rotate(177deg) brightness(111%) contrast(108%);
+    margin-bottom: 10px;
+  }
+
+  .image-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center the image and line */
+  }
+  
+  .white-line {
+    flex-grow: 1; /* Allow the line to grow and take up available space */
+    height: 2px; /* Adjust the height of the line as needed */
+    background-color: white; /* Color of the line */
+    margin-left: 10px; /* Add margin if you want space between the image and the line */
+  }
+  
+  @media screen and (max-width: 1570px){
+    .banner {
+      margin-bottom: 17rem;
+  }
+  }
+
+  @media screen and (max-width: 1445px){
+    .carousel-content{
+      right: 40%;    top: 20%;
+    }
+  }
+
+  @media screen and (max-width: 991px){
+    .banner {
+      margin-bottom: -4rem;
+  }
+  .carousel-content{
+    bottom: 10rem;    position: relative;right: 0;
+    transform: none;
+  }
+  }
+
+  @media screen and (max-width: 576px){
+    .banner h1{
+      font-size: 2rem;
+      /* text-align: center; */
+    }
+    .carousel-content{
+      bottom: 0;
+    }
+    .banner {
+      margin-bottom: 2rem;
+  }
+  
+  }

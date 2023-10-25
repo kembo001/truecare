@@ -1,0 +1,119 @@
+.header {
+ color: #fff;
+  }
+  
+  .top-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    background: #77368e;
+  }
+  
+
+  
+  .right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .bottom-nav {
+    background-color: #fff;
+    padding: 10px 0;
+  }
+  
+  .bottom-nav nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bottom-nav nav ul li {
+    margin: 0 20px;
+  }
+  
+  .bottom-nav nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+  .social-icons .facebook{
+      width: 15px;
+  }
+
+  .social-icons .twitter{
+    width: 25px;
+}
+
+.bottom-nav {
+    background-color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around; /* Distribute items to the start and end of the flex container */
+    align-items: center; /* Vertically center items */
+  }
+  
+  .bottom-nav nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px; /* Add margin to create space between links and logo */
+  }
+  
+
+  
+  .bottom-nav nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .bottom-nav .logo {
+    margin-left: 20px; 
+    color: #2596be;
+    font-size: 3rem;
+  }
+
+  .bottom-nav nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.left{
+    display: flex;
+}
+
+.left img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.bottom-nav nav ul li a:hover{
+    color: #bab4d4;
+}
+
+@media screen and (max-width: 991px) {
+  .top-nav, .bottom-nav{
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .bottom-nav nav ul li a{
+    font-size: 1rem;
+  }
+}

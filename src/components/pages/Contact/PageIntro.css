@@ -1,0 +1,33 @@
+/* ---------------------------------------------------------
+	
+	* Filename:			  feature-6.scss
+	* Description: 		Define the layout for feature-6
+  * Version:				1.0.0
+  * Last Modified:  5.21.2019
+	
+------------------------------------------------------------*/
+.feature.feature--6 { position: relative; height: 350px; }
+
+@media screen and (max-width: 767px) { .feature.feature--6 { height: auto; } }
+
+@media screen and (max-width: 575px) { .feature.feature--6 { padding: 0 10px; } }
+
+.feature.feature--6 div[class^="container"], .feature.feature--6 div[class^="row"] { height: 100%; }
+
+@media screen and (max-width: 767px) { .feature.feature--6 .container > .row { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -webkit-flex-direction: column-reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; } }
+
+.feature.feature--6 div[class^="col"].absolute { position: absolute; height: 100%; }
+
+.feature.feature--6 div[class^="col"].absolute.absolute--right { right: 0; padding-right: 0; }
+
+@media screen and (max-width: 767px) { .feature.feature--6 div[class^="col"].absolute { position: relative; right: initial; padding: initial; } }
+
+.feature.feature--6 .feature__image { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; max-width: 100%; }
+
+.feature.feature--6 .feature__content { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; height: 100%; }
+
+/** BEGIN COMPONENT OVERRIDES HERE **/
+
+.feature__image {
+ width: 100% !important;
+}

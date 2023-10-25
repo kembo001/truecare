@@ -1,0 +1,85 @@
+.purplesection{
+    background: #bab4d4;
+    margin: 100px 0 15rem;
+}
+
+.purplesection .row {
+    align-items: center;
+}
+
+.formwrap {
+    background: #77368e;
+    max-width: 350px;
+    margin: -55px auto;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+}
+
+.purplesection h2 {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.6925rem;
+    margin-bottom: 0.5rem;
+}
+
+.purplesection p{
+    color: #ffffff;
+}
+
+.formwrap {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for form elements */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    width: 300px;
+    padding: 10px 8px; /* Updated padding value */
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  input[type="submit"] {
+    font-size: 1.171875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 28px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;    background: #444;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #bab4d4;
+  }

@@ -1,0 +1,130 @@
+.button {
+  font-size: 1.171875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 28px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+.button {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+}
+
+.button.button-primary {
+  background: #77368e;
+}
+
+.button.button-primary {
+  color: #fff;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #333; 
+}
+
+h2 {
+  font-size: 2.8125rem;
+  font-weight: bold;
+  color: #444; 
+}
+
+h3 {
+  font-size: 1.5rem; 
+  color: #555; 
+  margin-bottom: 1rem;
+}
+
+ p a{
+   color: #bab4d4;
+ }
+
+ p a:hover{
+   color: #000;
+ }
+
+ /* Set Arial as the font for the entire body */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* You can specify Arial for specific elements like headings as well */
+h1, h2, h3, p {
+  font-family: Arial, sans-serif;
+}
+
+.justify-content-center{
+  display: flex;
+  justify-content: space-evenly !important;
+}
+
+.button.button-primary{
+  text-decoration: none;
+}
+
+.button.button-primary:hover{
+  background: #82618e;
+}
+
+.button-secondary{
+  background: #444;
+}
+
+.button-tertiary{
+  background: #bab4d4
+}
+
+.content-area h2{
+  font-size: 2rem;
+}
+.carousel .control-dots{
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  h2{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .page-title.page-title-left-box::before{
+    left: -190% !important; 
+  }
+}
+
+@media screen and (max-width: 767px){
+  .inner-banner {
+    height: 200px !important;
+  }
+  .page-title.page-title-left-box .page-title__text{
+    font-size: 1.8rem !important;
+  }
+  .formwrap{
+    margin: 0 auto !important;
+  }
+  .purplesection{
+    padding: 2rem 0 !important;
+
+  }
+}

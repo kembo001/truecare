@@ -1,0 +1,77 @@
+
+
+.footer-bottom {
+    padding: 40px 10px 40px;
+}
+
+/* ---------------------------------------------------------
+  
+  * Filename:			  footer-6.scss
+  * Description: 		Define the layout for footer-6
+  * Version:				1.0.0
+  * Last Modified:  4/17/2019
+	
+------------------------------------------------------------*/
+.footer.footer--6 #footer-one-pane .list { width: 100%; }
+
+@media screen and (max-width: 991px) { .footer.footer--6 #footer-one-pane .list { width: auto;text-align: center;padding: 0; } .justify-content-center{
+    flex-direction: column;align-items: center;
+}}
+
+/** BEGIN COMPONENT OVERRIDES HERE **/
+
+
+.justify-content-center{
+    display: flex;
+    justify-content: space-evenly !important;
+}
+
+.footer-top{
+    padding: 3rem 0;
+    background: #77368e;
+    position: relative;
+    top: -4rem;
+}
+
+.footer-top h2{
+    text-align: center;
+    color: #fff;
+}
+
+.footer-top h2 span a{
+    text-align: center;
+    color: #bab4d4;
+}
+
+.footer-top h2 span a:hover{
+    text-align: center;
+    color: #000;
+}
+
+.footer--6{
+    margin-bottom: 2rem;
+}
+
+.footer-row li a, address, .phone-number a{
+    color: #bab4d4;
+}
+
+.footer-row li a:hover, .address a address:hover, .phone-number a:hover{
+    color: #000;
+}
+
+
+
+.address a, .phone-number a{
+    text-decoration: none;
+}
+
+.footer-row li a{
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+.footer-row li{
+    list-style-type: none;
+}
