@@ -83,3 +83,19 @@
   input[type="submit"]:hover {
     background-color: #bab4d4;
   }
+
+  @media screen and (max-width: 1200px) and (min-width: 767px) {
+    input[type="text"], input[type="tel"], input[type="email"], textarea{
+        width: 100% !important;
+    }
+  }
+
+  @media screen and (max-width: 394px) {
+    input[type="text"], input[type="tel"], input[type="email"], textarea{
+        width: 100% !important;
+    }
+  }
+
+  .reasons-list li{
+      color: #fff;
+  }

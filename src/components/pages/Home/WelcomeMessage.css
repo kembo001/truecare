@@ -86,3 +86,39 @@ width: 100px;
         font-size: 2rem;
     }
 }
+
+@media screen and (max-width: 1700px) {
+    .call-out{
+        left: 35rem;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .call-out{
+        left: 20rem;
+        top: -5rem;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    .call-out{
+        left: 0rem;
+        top: -5rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .call-out{
+flex-direction: column;
+height: auto;
+top: 0;    margin: 5rem 0 2rem;
+    }
+    .call-out a {
+        margin-left: 0rem;
+    }
+
+.call-out h2 {
+
+    text-align: center;
+}
+}

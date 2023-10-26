@@ -128,3 +128,7 @@ h1, h2, h3, p {
 
   }
 }
+
+.button-secondary:hover{
+  background: #44444482;
+}

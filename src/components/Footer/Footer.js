@@ -63,12 +63,12 @@ function Footer() {
             </div>{" "}
             <div className="address">
               {" "}
-              <a href="#" target="_blank" title="Find us on Google Maps">
+              <a href="https://maps.app.goo.gl/kS4uCnysjWX81HGK8" target="_blank" title="Find us on Google Maps">
                 {" "}
                 <address>
                   {" "}
-                  123 Far Fara Way
-                  <br /> Neverland, DW 12345{" "}
+                  1042 White Porch Ave,
+                  <br /> Forney, TX 75126{" "}
                 </address>{" "}
               </a>{" "}
             </div>{" "}
@@ -76,20 +76,11 @@ function Footer() {
               {" "}
               <p>Call Today</p>{" "}
               <a
-                href="tel:0000000000"
+                href="tel:913-426-8333"
                 title="Contact us today"
                 data-phone-number=""
               >
-                000-000-0000
-              </a>{" "}
-            </div>{" "}
-            <div className="social-icons">
-              {" "}
-              <a href="#" title="Facebook">
-                <i className="fab fa-facebook-square" />
-              </a>{" "}
-              <a href="#" title="Google">
-                <i className="fab fa-google" />
+                913-426-8333
               </a>{" "}
             </div>{" "}
           </div>{" "}

@@ -75,3 +75,14 @@
 .footer-row li{
     list-style-type: none;
 }
+
+
+
+@media screen and (max-width: 991px){
+    .footer-top h2{
+        font-size: 1.5rem;
+    }
+}
+.phone-number p{
+    margin: 0;
+}

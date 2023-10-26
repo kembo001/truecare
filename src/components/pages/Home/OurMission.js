@@ -24,15 +24,6 @@ mission is to provide personalized, patient-centered care that not only addresse
 medical needs but also fosters emotional support, hope, and a sense of
 belonging.
       </p>{" "}
-      <div className="feature__buttons">
-        {" "}
-        <a href="#" className="button button--secondary" title="">
-          Button Text
-        </a>{" "}
-        <a href="#" className="button button--primary" title="">
-          CTA Button Text
-        </a>{" "}
-      </div>{" "}
     </div>{" "}
     <div className="col-md-6">
       {" "}

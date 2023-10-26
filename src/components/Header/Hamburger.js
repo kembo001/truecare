@@ -1,56 +1,74 @@
-import React, {useState} from "react";
-import './Hamburger.css'
+import React, { useState, useEffect } from "react";
+import './Hamburger.css';
 import phone from '../assets/phone-solid.svg';
 import Logo from '../assets/LogoHeader.png';
 
-
 const Navbar = () => {
+    const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
+    const [menu_class, setMenuClass] = useState("menu hidden");
+    const [isMenuClicked, setIsMenuClicked] = useState(false);
+    const [isSticky, setIsSticky] = useState(false);
 
-    // to change burger classes
-    const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
-    const [menu_class, setMenuClass] = useState("menu hidden")
-    const [isMenuClicked, setIsMenuClicked] = useState(false)
-
-    // toggle burger menu change
     const updateMenu = () => {
-        if(!isMenuClicked) {
-            setBurgerClass("burger-bar clicked")
-            setMenuClass("menu visible")
+        if (!isMenuClicked) {
+            setBurgerClass("burger-bar clicked");
+            setMenuClass("menu visible");
+        } else {
+            setBurgerClass("burger-bar unclicked");
+            setMenuClass("menu hidden");
         }
-        else {
-            setBurgerClass("burger-bar unclicked")
-            setMenuClass("menu hidden")
-        }
-        setIsMenuClicked(!isMenuClicked)
-    }
+        setIsMenuClicked(!isMenuClicked);
+    };
 
-    return(
+    useEffect(() => {
+        // Function to check if the user has scrolled and add the sticky class
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setIsSticky(true);
+            } else {
+                setIsSticky(false);
+            }
+        };
+
+        // Add the scroll event listener
+        window.addEventListener("scroll", handleScroll);
+
+        // Clean up the event listener on component unmount
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    return (
         <div>
-            <nav className="Hamburger">
+            <nav className={`Hamburger${isSticky ? ' sticky' : ''}`}>
                 <div className="burger-menu" onClick={updateMenu}>
-                    <div className={burger_class} ></div>
-                    <div className={burger_class} ></div>
-                    <div className={burger_class} ></div>
+                    <div className={burger_class}></div>
+                    <div className={burger_class}></div>
+                    <div className={burger_class}></div>
                 </div>
-                <img className='Logo' src={Logo} alt="Logo" />
-                <img src={phone} alt="Phone Icon" />
-
+                <a href="/" title="">
+                {" "}
+                <img
+                  className="lazyload"
+                  src={Logo}
+                  alt="Logo"
+                />{" "}
+              </a>{" "}                <img src={phone} alt="Phone Icon" width={"25px"} />
             </nav>
 
             <div className={menu_class}>
-            <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/services">Hospice Services</a></li>
-            <li><a href="/home-health">Home Health</a></li>
-            <li><a href="/testimonials">Testimonials</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/contact-us">Contact Us</a></li>
-
-          </ul>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services">Hospice Services</a></li>
+                    <li><a href="/home-health">Home Health</a></li>
+                    <li><a href="/testimonials">Testimonials</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact-us">Contact Us</a></li>
+                </ul>
             </div>
-
         </div>
-    )
+    );
 }
 
-export default Navbar
+export default Navbar;

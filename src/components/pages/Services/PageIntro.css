@@ -31,3 +31,34 @@
 .feature__image {
  width: 100% !important;
 }
+
+@media screen and (min-width: 767px){
+  .feature.feature--6 .feature__content{
+    left: -3rem;
+    position: relative;
+  }
+}
+
+.content__buttons .button-primary{
+margin-right: 1rem;
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px){
+  .content__buttons .button-primary{
+    margin-bottom: 10px;
+  }
+}
+
+
+@media screen and (max-width: 415px) {
+  .content__buttons .button-primary{
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1201px) and (min-width: 767px){
+  .feature.feature--6 {
+    position: relative;
+    height: 100% !important;
+}
+}

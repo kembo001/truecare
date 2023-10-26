@@ -10,7 +10,7 @@ function Contact() {
         <Banner />
         {/* <PageIntro /> */}
         < ServicesDescription />
-        <CTA />
+        {/* <CTA /> */}
     </div>
   )
 }

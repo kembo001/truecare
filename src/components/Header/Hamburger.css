@@ -5,6 +5,9 @@
     display: flex;
     justify-content: flex-start;
     padding: 1em;
+    position: fixed;  /* Add this to make it sticky */
+    top: 0;           /* Stick to the top of the viewport */
+    z-index: 100;     /* Adjust the z-index as needed */
     display: none;
 }
 
@@ -14,7 +17,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-evenly;
     cursor: pointer;
 }
 
@@ -28,10 +31,11 @@
 .menu {
     width: 60%;
     height: 100vh;
-    background-color:#bab4d4;
-    position: absolute;
-    /* top: 0; */
-    z-index: 1;
+    background-color: #bab4d4;
+    position: fixed;   /* Add this to make the menu sticky */
+    top: 5em;          /* Position it right below the navigation bar */
+    z-index: 99;      /* Adjust the z-index to be lower than the navigation bar */
+    right: 0;
 }
 
 /* ------------- sliding menu ------------------ */
@@ -69,7 +73,7 @@
 @media screen and (max-width: 991px) {
     .Hamburger {
         display: flex !important;
-        /* flex-direction: row-reverse; */
+        flex-direction: row-reverse;
         justify-content: space-between;
     }
 }
@@ -90,3 +94,7 @@
   .menu ul{
       padding-left: 10px;
   }
+
+
+
+/* Rest of your CSS remains the same */

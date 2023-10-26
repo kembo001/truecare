@@ -104,6 +104,9 @@
     bottom: 10rem;    position: relative;right: 0;
     transform: none;
   }
+  .banner {
+    margin-top: 5rem;
+}
   }
 
   @media screen and (max-width: 576px){
@@ -116,6 +119,22 @@
     }
     .banner {
       margin-bottom: 2rem;
+      margin-top: 5rem;
   }
   
+  }
+
+  .banner a {
+    text-decoration: none !important;
+    list-style: none;
+  }
+
+
+  .bottom-half:hover{
+    background: #77368e;
+  }
+  @media screen and (max-width: 991px) and (min-width: 576px){
+    .carousel-root{
+      margin-bottom: 10rem;
+    }
   }

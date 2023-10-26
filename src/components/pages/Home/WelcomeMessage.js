@@ -36,11 +36,11 @@ in events and initiatives that promote wellness and support those in need.</li>
           </p>{" "}
           <div className="content__buttons">
             {" "}
-            <a href="#" className="button button-primary" title="">
-              CTA Button Text
+            <a href="/about" className="button button-primary" title="">
+              About Us
             </a>{" "}
-            <a href="#" className="button button-secondary" title="">
-              BUTTON TEXT
+            <a href="/contact-us" className="button button-secondary" title="">
+              Contact Us
             </a>{" "}
           </div>{" "}
         </div>{" "}
@@ -61,7 +61,7 @@ in events and initiatives that promote wellness and support those in need.</li>
   <h2>Be a Hospice<br></br><span> care volunteer</span></h2>
   <p>We are excited to post contents on<br></br> the webstie. This space is reserved</p>
   <a href="#" className="button button-tertiary" title="">
-              BUTTON TEXT
+              Click Here
             </a>{" "}
 </div>
       </div>

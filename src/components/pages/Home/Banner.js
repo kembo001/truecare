@@ -25,14 +25,15 @@ function Banner() {
         <div className="carousel-content">
 <div className='top-half'>
 <h1><span>Bringing<br></br></span>Quality Care<br></br>to Your Doorstep</h1>
-        <p>At TruuCare, we're more than just a healthcare provider; we're your partners in
+        <p>At TrueCare, we're more than just a healthcare provider; we're your partners in
 wellness and compassion. With a deep commitment to delivering exceptional
 home health and hospice care, we have been serving our community for over 10
 years. Our journey began with a simple yet powerful belief: every individual
 deserves to age with dignity, comfort, and the highest quality of care, right in the
 place they call home.</p>
-          <a className='button button-primary'>Find Out More</a>
+          <a className='button button-primary' href='/contact-us'>Find Out More</a>
 </div>
+<a href='/contact-us'>
 <div className='bottom-half'>
   <div class="image-container">
     <img src={calendar} alt="calendar" width={'60px'} />
@@ -40,8 +41,7 @@ place they call home.</p>
   </div>
   <h3>Schedule an Assessment</h3>
 </div>
-
-
+</a>
 
 
         </div>
