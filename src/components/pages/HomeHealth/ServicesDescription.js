@@ -31,7 +31,7 @@ function ServicesDescription() {
             </p>
           </div>
           <div  />
-          <img width="100%" className="feature__image" src={Welcome} alt="" />
+          <img width="100%" src={Welcome} alt="" />
         </div>
       </div>
     </div>

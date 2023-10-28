@@ -11,7 +11,7 @@
 
 .inner-banner .container, .inner-banner .container > .row { height: 100%; }
 
-@media screen and (max-width: 767px) { .inner-banner { height: 400px; } }
+@media screen and (max-width: 767px) { .inner-banner { height: 400px; }.page-title.page-title-left-box .page-title__text{font-size: 1.4rem !important} }
 
 .page-title.page-title-left-box { position: absolute; bottom: 0; left: 0; width: 100%; text-align: left; overflow: hidden; padding-left:15px; }
 
@@ -62,3 +62,4 @@
 .page-title__text{
     text-transform: uppercase;
 }
+
