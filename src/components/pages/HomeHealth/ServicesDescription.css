@@ -1,0 +1,6 @@
+.feature__image {
+    /* width: 100% !important; */
+    width: 450px !important;
+    height: auto;
+    max-width: 100% !important;
+}

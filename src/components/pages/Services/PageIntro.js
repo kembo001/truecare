@@ -1,5 +1,5 @@
 import React from 'react';
-import Welcome from '../assets/welcomeImage.jpg';
+import Welcome from '../assets/190687101_l_normal_none.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './PageIntro.css';
 

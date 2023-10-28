@@ -1,13 +1,15 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../Services/ServicesDescription.css';
+import './ServicesDescription.css';
+import Welcome from '../assets/185883659_l_normal_none.jpg';
+
 
 function ServicesDescription() {
   return (
     <div className="container">
       <div className="row">
         <div className="content-area col-12">
-          <div id="dnn_ctr434_HtmlModule_lblContent" className="Normal">
+          <div>
             <h2>Home Health Services You Can Count On</h2>
             <p>
               Welcome to our Home Health Services, where we provide a dependable and compassionate healthcare solution in the comfort of your home. Our commitment to your well-being includes a comprehensive range of services, with a particular focus on:
@@ -28,7 +30,8 @@ function ServicesDescription() {
               At our Home Health Services, we are dedicated to making your life more comfortable and ensuring your health and well-being are top priorities. Whether you or your loved one requires skilled nursing care, therapy services, or home health aide support, we are here to provide exceptional care tailored to your unique needs.
             </p>
           </div>
-          <div className="clear" />
+          <div  />
+          <img width="100%" className="feature__image" src={Welcome} alt="" />
         </div>
       </div>
     </div>

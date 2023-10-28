@@ -2,6 +2,7 @@ import React from 'react';
 import Welcome from '../assets/welcomeImage.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Services/PageIntro.css';
+import Homehealth from '../assets/43859605_l_normal_none.jpg';
 
 function PageIntro() {
   return (
@@ -10,7 +11,7 @@ function PageIntro() {
         <div className="container">
           <div className="row">
             <div className="col-md-6 mt-5 mt-md-0 p-md-0 absolute absolute--right">
-              <img width="100%" className="feature__image" src={Welcome} alt="" />
+              <img width="100%" className="feature__image" src={Homehealth} alt="" />
             </div>
             <div className="col-md-6">
               <div className="feature__content">
