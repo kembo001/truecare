@@ -50,7 +50,7 @@ const Navbar = () => {
                 <a href="/" title="">
                 {" "}
                 <img
-                  className="lazyload"
+                  className="logo"
                   src={Logo}
                   alt="Logo"
                 />{" "}

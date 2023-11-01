@@ -86,3 +86,7 @@
 .phone-number p{
     margin: 0;
 }
+
+.footer-row .logo img{
+    margin-bottom: 10px;
+}

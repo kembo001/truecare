@@ -117,3 +117,16 @@
     font-size: 1rem;
   }
 }
+
+.logo {
+  position: relative;
+}
+
+.logo::after {
+  content: "HOME HEALTH & HOSPICE"; /* The text you want to add */
+  display: block; /* Place the text on a new line below the image */
+  text-align: center; /* Center the text horizontally */
+  font-size: 14px; /* Adjust the font size as needed */
+  color: #333; /* Adjust the text color as needed */
+  margin-top: -10px;
+}
