@@ -82,14 +82,14 @@
 
   
   .menu li a{
-    font-size: 20px;
+    font-size: 23px;
     color: rgb(37, 37, 37);
     text-transform: uppercase;
     list-style-type: none;  text-decoration: none; 
   }
 
   .menu li{
-      text-decoration: none;    list-style-type: none;border-bottom: 1px solid #1f1f1f;
+      text-decoration: none;    list-style-type: none;border-bottom: 1px solid #1f1f1f;    margin: 1rem 0;
   }
   .menu ul{
       padding-left: 10px;
