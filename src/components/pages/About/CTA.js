@@ -1,7 +1,12 @@
 import React from 'react'
 import './CTA.css'
+import { useForm, ValidationError } from '@formspree/react';
 
 function CTA() {
+  const [state, handleSubmit] = useForm("mnqezkyk");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
+  }
   return (
     <div>
         <div className="container-fluid">
@@ -19,30 +24,77 @@ function CTA() {
                         Choose TrueCare For Your Hospice Needs{" "}
                       </h2>{" "}
                       <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. At deserunt corrupti voluptatum vitae consequuntur hic explicabo provident reiciendis dolor voluptate rem deleniti, aperiam, minima dolorum laudantium. Sed aliquam voluptas eius?
+                      At TrueCare, we are dedicated to providing exceptional hospice services that go beyond medical care. Our team is committed to ensuring that every patient receives compassionate and personalized support during their journey.
                       </p>
                       <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. At deserunt corrupti voluptatum vitae consequuntur hic explicabo provident reiciendis dolor voluptate rem deleniti, aperiam, minima dolorum laudantium. Sed aliquam voluptas eius?
+                      What sets us apart is our holistic approach. We don't just focus on physical health; we prioritize emotional well-being and provide comprehensive palliative care to manage pain and symptoms effectively.
                       </p>{" "}
                     </div>{" "}
                     <div className="col-md-4">
         <div className="formwrap">
-          <form>
-            <label htmlFor="name">Name:</label>
-            <input type="text" id="name" name="name" required /><br /><br />
+        <form onSubmit={handleSubmit}>
 
-            <label htmlFor="number">Number:</label>
-            <input type="tel" id="number" name="number" required /><br /><br />
+        <label htmlFor="Name">
+        Name
+      </label>
+      <input
+        id="name"
+        type="name" 
+        name="name"
+      />
+      <ValidationError 
+        prefix="Name" 
+        field="name"
+        errors={state.errors}
+      />
 
-            <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" required /><br /><br />
+<label htmlFor="Number">
+        Number
+      </label>
+      <input
+        id="number"
+        type="number" 
+        number="number"
+      />
+      <ValidationError 
+        prefix="Number" 
+        field="Number"
+        errors={state.errors}
+      />
 
-            <label htmlFor="help">How may we help you:</label>
-            <textarea id="help" name="help" rows="4" required></textarea><br /><br />
 
-            <input type="submit" value="Submit" />
-          </form>
+      <label htmlFor="email">
+        Email Address
+      </label>
+      <input
+        id="email"
+        type="email" 
+        name="email"
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+
+<label htmlFor="How may we help you">
+How may we help you
+      </label>
+      <textarea
+        id="message"
+        name="message"
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+      <button type="submit" disabled={state.submitting}>
+        Submit
+      </button>
+    </form>
         </div>
+        
       </div>
                   </div>{" "}
                 </div>{" "}
@@ -56,4 +108,6 @@ function CTA() {
   )
 }
 
+
 export default CTA
+
