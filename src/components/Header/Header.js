@@ -25,9 +25,6 @@ function Header() {
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
             <img className='facebook' src={facebooklogo} alt="Facebook" />
             </a>
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-            <img className='twitter' src={twitterlogo} alt="Twitter" />
-            </a>
           </div>
         </div>
       </div>

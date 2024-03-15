@@ -4,6 +4,24 @@ import './ServicesDescription.css';
 import facebooklogo from '../assets/facebook-f.svg';
 import googlelogo from '../assets/google.svg';
 
+const reviews = [
+  {
+    id: 1,
+    text: "Great service! The team at TrueCare really goes above and beyond to ensure their clients are well taken care of.",
+    author: "Brianna S."
+  },
+  {
+    id: 2,
+    text: "I highly recommend TrueCare. Their professionalism and dedication to their clients are truly commendable.",
+    author: "Chebet C."
+  },
+  {
+    id: 3,
+    text: "Exceptional care and support from TrueCare. They made a difficult time much easier for me and my family.",
+    author: "Daniel L."
+  }
+];
+
 function ServicesDescription() {
   return (
     <div className="container">
@@ -25,20 +43,22 @@ function ServicesDescription() {
             </p>
           </div>
           <h3>Leave us a Review:</h3>
-          <div class="reviewBTN">
-<a href=""><img
-                  className="lazyload"
-                  src={facebooklogo}
-                  alt="Logo"
-                  style={{ width: '40', height: '50px', margin: '0 1rem 0 0' }}
-                />{" "}</a> 
-<a href=""><img
-                  className="lazyload"
-                  src={googlelogo}
-                  alt="Logo"
-                  style={{ width: '40', height: '50px' }}
-                />{" "}</a>        
-</div>
+          <div className="reviewBTN">
+            <a href="#">
+              <img
+                className="lazyload"
+                src={facebooklogo}
+                alt="Facebook Logo"
+                style={{ width: '40px', height: '50px', margin: '0 0 3rem 0' }}
+              />
+            </a>
+            {reviews.map(review => (
+              <div key={review.id} className="review">
+                <p>{review.text}</p>
+                <p>- {review.author}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

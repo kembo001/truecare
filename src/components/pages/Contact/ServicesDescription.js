@@ -13,8 +13,9 @@ function ServicesDescription() {
               We're here to assist you and answer any questions you may have. Please don't hesitate to reach out to us. Here's how you can get in touch:
             </p>
             <ul>
-              <li>Phone: 913-426-8333</li>
-              <li>Email: <a href="mailto:truecarehhagency@gmail.com">truecarehhagency@gmail.com</a></li>
+              <li>Phone: <a href='tel:469-345-7600' title='Call Us Today!'>469-345-7600</a></li>
+              <li>Email: <a href="mailto:truecarehhagency@gmail.com">Truecarehhagency@gmail.com</a></li>
+              <li>Email: <a href="mailto:Hospicetruecare@gmail.com">Hospicetruecare@gmail.com</a></li>
               <li>Address: 1042 White Porch Ave, Forney, TX 75126</li>
             </ul>
           </div>

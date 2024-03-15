@@ -9,7 +9,7 @@ function Footer() {
   return (
     <div>
       <div className='footer-top'>
-        <h2>Call us Today! <span><a href='' title=''>913-426-8333</a></span></h2>
+        <h2>Call us Today! <span><a href='tel:469-345-7600' title='Call Us Today'>469-345-7600</a></span></h2>
       </div>
 <footer className="footer footer--6">
   {" "}
@@ -76,11 +76,11 @@ function Footer() {
               {" "}
               <p>Call Today</p>{" "}
               <a
-                href="tel:913-426-8333"
+                href="tel:469-345-7600"
                 title="Contact us today"
                 data-phone-number=""
               >
-                913-426-8333
+                469-345-7600
               </a>{" "}
             </div>{" "}
           </div>{" "}

@@ -132,3 +132,9 @@ h1, h2, h3, p {
 .button-secondary:hover{
   background: #44444482;
 }
+
+@media screen and (max-width: 1423px) and  (min-width: 767px){
+  .feature.feature--6 .feature__content{
+    padding-left: 2rem;
+  }
+}
