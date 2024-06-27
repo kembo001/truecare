@@ -1,5 +1,59 @@
 import React from 'react'
 import './CTA.css'
+import { useForm, ValidationError } from '@formspree/react';
+
+function ContactForm() {
+  const [state, handleSubmit] = useForm("movaaoqo");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
+  }
+  return (
+    <form onSubmit={handleSubmit}>
+      <label htmlFor="name">
+      </label>
+      <input
+        id="name"
+        type="text" 
+        name="name"
+        placeholder='Name'
+      />
+      <label htmlFor="phone">
+      </label>
+      <input
+        id="phone"
+        type="tel" 
+        name="phone"
+        placeholder='Phone'
+      />
+      <label htmlFor="email">
+      </label>
+      <input
+        id="email"
+        type="email" 
+        name="email"
+        placeholder='Email Address'
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      <textarea
+        id="message"
+        name="message"
+        placeholder='How May We Help You?'
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+      <button type="submit" disabled={state.submitting}>
+        Submit
+      </button>
+    </form>
+  );
+}
 
 function CTA() {
   return (
@@ -26,23 +80,7 @@ function CTA() {
                       </p>{" "}
                     </div>{" "}
                     <div className="col-md-4">
-        <div className="formwrap">
-          <form>
-            <label htmlFor="name">Name:</label>
-            <input type="text" id="name" name="name" required /><br /><br />
-
-            <label htmlFor="number">Number:</label>
-            <input type="tel" id="number" name="number" required /><br /><br />
-
-            <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" required /><br /><br />
-
-            <label htmlFor="help">How may we help you:</label>
-            <textarea id="help" name="help" rows="4" required></textarea><br /><br />
-
-            <input type="submit" value="Submit" />
-          </form>
-        </div>
+                    <ContactForm />
       </div>
                   </div>{" "}
                 </div>{" "}

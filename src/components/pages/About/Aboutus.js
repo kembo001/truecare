@@ -2,7 +2,7 @@ import React from 'react'
 import Banner from './Banner'
 import PageIntro from './PageIntro'
 import ServicesDescription from './ServicesDescription'
-import CTA from './CTA'
+import CTA from '../Contact Form/CTA'
 
 function About() {
   return (
