@@ -32,12 +32,6 @@ function Footer() {
               <a href="/services">Hospice Services</a>
               </li>{" "}
               <li>
-              <a href="/team">Hospice Team</a>
-              </li>{" "}
-              <li>
-              <a href="/resources">Resources</a>
-              </li>{" "}
-              <li>
               <a href="/contact-us">Contact Us</a>
               </li>{" "}
             </ul>{" "}

@@ -130,3 +130,7 @@
   color: #333; /* Adjust the text color as needed */
   margin-top: -10px;
 }
+
+.left p, .right p{
+  margin-bottom: 0;
+}
