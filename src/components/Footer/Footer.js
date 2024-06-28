@@ -57,7 +57,7 @@ function Footer() {
             </div>{" "}
             <div className="address">
               {" "}
-              <a href="https://maps.app.goo.gl/kS4uCnysjWX81HGK8" target="_blank" title="Find us on Google Maps">
+              <a href="https://maps.app.goo.gl/kS4uCnysjWX81HGK8" target="_blank" rel="noreferrer" title="Find us on Google Maps">
                 {" "}
                 <address>
                   {" "}

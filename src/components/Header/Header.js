@@ -1,7 +1,5 @@
 import React from 'react';
 import './Header.css'; // Import your CSS file for styling
-import facebooklogo from '../assets/facebook-f.svg';
-import twitterlogo from '../assets/x-twitter.svg';
 import phone from '../assets/phone-solid.svg';
 import Logo from '../assets/LogoHeader.png';
 import Hamburger from './Hamburger.js'
