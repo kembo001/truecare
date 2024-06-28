@@ -73,13 +73,20 @@ function CTA() {
                         Choose TrueCare For Your Hospice Needs{" "}
                       </h2>{" "}
                       <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. At deserunt corrupti voluptatum vitae consequuntur hic explicabo provident reiciendis dolor voluptate rem deleniti, aperiam, minima dolorum laudantium. Sed aliquam voluptas eius?
-                      </p>
-                      <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. At deserunt corrupti voluptatum vitae consequuntur hic explicabo provident reiciendis dolor voluptate rem deleniti, aperiam, minima dolorum laudantium. Sed aliquam voluptas eius?
-                      </p>{" "}
+                      At TrueCare, we are your trusted partner for comprehensive Home Health Services. Our commitment is to provide exceptional care that goes beyond medical assistance. Here's why you should choose us:
+                    </p>
+                    <p>
+                    <ul className="reasons-list">
+                      <li>We prioritize your comfort and well-being, ensuring that you receive personalized care right in the comfort of your home.</li>
+                      <li>Our skilled nursing care, therapy services, and home health aide support are designed to address your unique needs and improve your quality of life.</li>
+                      <li>We believe in a holistic approach to healthcare, where emotional and physical well-being are equally important, and we're here to support you every step of the way.</li>
+                    </ul>
+                    </p>
                     </div>{" "}
                     <div className="col-md-4">
+                    <h2 style={{ padding:"2rem 0 0", textTransform: "uppercase" }}>
+                        Contact Us{" "}
+                      </h2>{" "}
                     <ContactForm />
       </div>
                   </div>{" "}

@@ -60,7 +60,7 @@ in events and initiatives that promote wellness and support those in need.</li>
   <img src={Freindssvg} />
   <h2>Be a Hospice<br></br><span> care volunteer</span></h2>
   <p>We are excited to post contents on<br></br> the webstie. This space is reserved</p>
-  <a href="#" className="button button-tertiary" title="">
+  <a href="/contact-us" className="button button-tertiary" title="">
               Click Here
             </a>{" "}
 </div>

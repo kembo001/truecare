@@ -138,3 +138,11 @@ h1, h2, h3, p {
     padding-left: 2rem;
   }
 }
+
+.content-area ul li a{
+  color: #77368e;
+}
+
+.content-area ul li a:hover{
+  color: #bab4d4;
+}

@@ -69,13 +69,24 @@ function Footer() {
             <div className="phone-number">
               {" "}
               <p>Call Today</p>{" "}
-              <a
-                href="tel:469-345-7600"
+              <p>Phone:&nbsp;  
+                <a
+                href="tel:4693457600"
                 title="Contact us today"
                 data-phone-number=""
               >
                 469-345-7600
               </a>{" "}
+              </p>
+              <p>Fax:&nbsp; 
+               <a
+                href="tel:4693457162"
+                title="Contact us today"
+                data-phone-number=""
+              >
+                469-345-7162
+              </a>{" "}
+              </p>
             </div>{" "}
           </div>{" "}
         </div>{" "}

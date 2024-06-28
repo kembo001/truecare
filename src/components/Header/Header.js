@@ -22,9 +22,6 @@ function Header() {
         <div className="right">
           <p>Email Us at: <a href="mailto:truecarehhagency@gmail.com">truecarehhagency@gmail.com</a></p>
           <div className="social-icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-            <img className='facebook' src={facebooklogo} alt="Facebook" />
-            </a>
           </div>
         </div>
       </div>

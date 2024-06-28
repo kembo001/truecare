@@ -14,6 +14,7 @@ function ServicesDescription() {
             </p>
             <ul>
               <li>Phone: <a href='tel:469-345-7600' title='Call Us Today!'>469-345-7600</a></li>
+              <li>Fax: <a href='tel:4693457162' title='Call Us Today!'>469-345-7162</a></li>
               <li>Email: <a href="mailto:truecarehhagency@gmail.com">Truecarehhagency@gmail.com</a></li>
               <li>Email: <a href="mailto:Hospicetruecare@gmail.com">Hospicetruecare@gmail.com</a></li>
               <li>Address: 1042 White Porch Ave, Forney, TX 75126</li>
